@@ -1,499 +1,1096 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ali Alperen Uzun — Game Developer</title>
+  <meta name="description" content="Game Developer & Team Lead with 5+ years in Unity. Creator of The Dark Crown: Genesis. Worked on titles with 30M+ downloads." />
+  <meta name="keywords" content="ali alperen uzun, game developer, unity, game design, dark crown genesis" />
+  <meta property="og:title" content="Ali Alperen Uzun — Game Developer" />
+  <meta property="og:description" content="Game Developer & Team Lead — Unity, 5+ years professional experience." />
+  <meta property="og:url" content="https://aalperenuzun.github.io/" />
+  <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 
-    <!-- Title: add your Portfolio websites's title here -->
-    <title>Ali Alperen Uzun | Developer</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    <!-- Add some coding keywords below, Ex: (javascript, yourusername, etc) -->
-    <meta name="keywords" content="aalperenuzun, alperen, unity, csharp" />
-
-    <!-- Improve your SEO by adding a small descrption of you -->
-    <meta name="description" content="Ali Alperen Uzun | Developer" />
-
-    <!-- Add a your png Logo to the assets folder and change the href attr accordingly  -->
-    <link rel="icon" type="image/png" href="./assets/devfolio-logo.png" />
-
-    <!-- Add your primary-theme color for the value of content -->
-    <meta name="theme-color" content="#36d1dc" />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <!-- Fill content with the URL of this portfolio you'll host -->
-    <meta property="og:url" content="https://aalperenuzun.github.io/" />
-    <!-- Fill content with the title of your portfolio(Recommended to use what you put in <title> tag) -->
-    <meta property="og:title" content="Ali Alperen Uzun | Developer" />
-    <!-- Give a short description that'll show up when you/someone shares your portfolio on different platform -->
-    <meta property="og:description" content="Ali Alperen Uzun Portfolio" />
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <!-- Again fill content attr with the URL of this portfolio you'll host -->
-    <meta property="twitter:title" content="Ali Alperen Uzun | Developer" />
-    <!-- short description that shows up while your portfolio is shared -->
-    <meta
-      property="twitter:description"
-      content="Ali Alperen Uzun Portfolio"
-    />
-
-    <!-- link tags -->
-    <link rel="stylesheet" href="./css/main.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <script src="./javascript/scrollreveal.min.js"></script>
-    <script
-      defer
-      type="text/javascript"
-      src="./javascript/scrollveal.js"
-    ></script>
-
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-
-      gtag("config", "UA-122228201-4");
-    </script>
-    <!-- End of Google Analytics -->
-  </head>
-
-<style>
-    /* On screens that are less than 768px, show one row */
-    @media (max-width: 767px) {
-        .grid {
-            grid-template-rows: repeat(1, minmax(200px, 1fr));
-        }
+    :root {
+      --bg:        #f4f0e6;
+      --bg2:       #ede8db;
+      --surface:   #ede8db;
+      --surface2:  #e5e0d3;
+      --border:    rgba(13,11,8,0.10);
+      --accent:    #bf3729;
+      --accent2:   #d94f41;
+      --text:      #0d0b08;
+      --muted:     #7a736a;
+      --muted2:    #aba39a;
+      --dark-bg:   #0d0b08;
+      --dark-txt:  #f4f0e6;
+      --font-display: 'Cormorant Garamond', serif;
+      --font-body:    'Outfit', sans-serif;
+      --max-w: 1060px;
+      --section-gap: 96px;
     }
-</style>
 
-  <body>
-    <!-- Hero Section -->
-    <div id="hero">
-      <section class="container">
-        <h1 class="hero-title">
-          Hi, I am <span class="text-color-main name">Alperen Uzun.</span>
-          <br />
-          I'm a Game Developer & Designer.
-        </h1>
-        <p class="hero-cta">
-          <a class="cta-btn cta-btn--hero" href="#about">Get in touch</a>
-        </p>
-      </section>
-      <a href="#about" class="scroll-down-link" aria-label="scroll-down">
-        <div class="scroll-down"></div
-      ></a>
-    </div>
-    <!-- /END Hero Section -->
+    html { scroll-behavior: smooth; }
 
-    <!-- About Section -->
-    <section id="about">
-      <div class="container">
-        <h2 class="section-title">About Me</h2>
-        <div class="row about-wrapper">
-          <div class="about-wrapper__image">
-            <img
-              class="img-fluid"
-              src="./assets/me.jpeg"
-              alt="Profile Image"
-            />
-          </div>
-          <div class="about-wrapper__info">
-            <p class="about-wrapper__info-text">
-                I have 5 years of professional experience in game development. I have been using Unity for 7 years
-                now and have experience in both computer and mobile games.
-            </p>
-            <span class="about-wrapper__cta">
-              <a href="./assets/CV.pdf" download="AliAlperenUzunCV" class="cta-btn cta-btn--resume">View Resume</a>
-            </span>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- /END About Section -->
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      font-weight: 300;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
 
-    <!--Projects Section-->
-    <section id="projects">
-      <div class="container">
-        <div class="project-wrapper">
-          <h2 class="section-title dark-blue-text">Projects</h2>
+    /* ── NAV ───────────────────────────────────────────────────── */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: background 0.3s, backdrop-filter 0.3s;
+    }
+    nav.scrolled {
+      background: rgba(244,240,230,0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav-logo {
+      font-family: var(--font-display);
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--text);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+    }
+    .nav-links {
+      display: flex;
+      gap: 36px;
+      list-style: none;
+    }
+    .nav-links a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--text); }
 
-          <!-- Each .row is a project -->
-          <article class="row">
-            <div class="project-wrapper__text">
-              <h3 class="project-wrapper__text-title">The Dark Crown: Genesis</h3>
-              <p class="project-wrapper__text-info">
-                  A pixel-perfect rogue-lite where darkness becomes your greatest weapon. 
-              </p>
-              <p class="project-wrapper__text-info">
-                  Sacrificed by your kingdom, you awaken in the depths of the endless cursed dungeon. Defeat powerful Demons, claim their elements, and rise through.
-              </p>
-                <p class="project-wrapper__text-info">
-                    You can play on Steam Playtest:
-                </p>
-              <div class="project-wrapper__text-btns">
-                <a
-                  href="https://store.steampowered.com/app/3273960/The_Dark_Crown_Genesis/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="cta-btn cta-btn--hero cta-btn--projects"
-                  >Steam</a
-                >
-              </div>
-            </div>
+    /* ── HERO ──────────────────────────────────────────────────── */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 120px 40px 80px;
+      max-width: var(--max-w);
+      margin: 0 auto;
+      position: relative;
+    }
+    .hero-eyebrow {
+      font-size: 0.78rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 24px;
+      font-weight: 500;
+      opacity: 0;
+      animation: fadeUp 0.7s 0.1s forwards;
+    }
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(3.5rem, 8vw, 7rem);
+      font-weight: 700;
+      line-height: 1.02;
+      color: var(--text);
+      letter-spacing: -0.01em;
+      margin-bottom: 28px;
+      opacity: 0;
+      animation: fadeUp 0.7s 0.25s forwards;
+    }
+    .hero-title em {
+      font-style: italic;
+      color: var(--accent2);
+    }
+    .hero-sub {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 520px;
+      line-height: 1.75;
+      margin-bottom: 44px;
+      font-weight: 300;
+      opacity: 0;
+      animation: fadeUp 0.7s 0.4s forwards;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      opacity: 0;
+      animation: fadeUp 0.7s 0.55s forwards;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 13px 28px;
+      font-family: var(--font-body);
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: 2px;
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background: var(--text);
+      color: var(--bg);
+      border: 1px solid var(--text);
+    }
+    .btn-primary:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+      transform: translateY(-2px);
+    }
+    .btn-ghost {
+      background: transparent;
+      color: var(--text);
+      border: 1px solid rgba(13,11,8,0.22);
+    }
+    .btn-ghost:hover {
+      border-color: var(--text);
+      transform: translateY(-2px);
+    }
+    .btn-ghost-dark {
+      background: transparent;
+      color: var(--dark-txt);
+      border: 1px solid rgba(244,240,230,0.22);
+    }
+    .btn-ghost-dark:hover {
+      border-color: var(--dark-txt);
+    }
+    .hero-stats {
+      position: absolute;
+      right: 40px;
+      bottom: 80px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      opacity: 0;
+      animation: fadeIn 0.8s 0.9s forwards;
+    }
+    .stat {
+      text-align: right;
+    }
+    .stat-number {
+      font-family: var(--font-display);
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1;
+    }
+    .stat-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+    .hero-scroll {
+      position: absolute;
+      bottom: 36px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      color: var(--muted2);
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      text-decoration: none;
+      animation: bounce 2s infinite 1.5s;
+    }
+    .hero-scroll i { font-size: 0.9rem; }
 
-            <div class="project-wrapper__image">
-                        <a href="https://store.steampowered.com/app/3273960/The_Dark_Crown_Genesis/" target="_blank" rel="noopener noreferrer">
-                            <div class="thumbnail rounded">
-                                <img src="./assets/darkcrown.png" class="img-fluid" alt="Project Image" />
-                            </div>
-                        </a>
-              <!--<a href="#" target="_blank" rel="noopener noreferrer">
-                <div class="thumbnail rounded">
-                  <img
-                    src="./assets/project.png"
-                    class="img-fluid"
-                    alt="Project Image"
-                  />
-                </div>
-              </a></!-->
-            </div>
-          </article>
-          <!-- /END Project -->
-        <div class="project-wrapper__text">
-            <h3 class="project-wrapper__text-title">Other Projects</h3>
-        </div>
-        <div class="grid">
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/hand-strike/id1559046720" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/handstrike.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/saw-stick/id6443920255" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/sawstick.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/catapult-runner-3d/id1571483089" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/catapultrunner.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/battle-the-giant/id1581980186" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/battlethegiant.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/dig-to-be-rich/id6443624849" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/digtoberich.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/grind-them-all/id1601794975" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/grindthemall.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/8-way-attack/id1641727446" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/eightwayattack.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/pokey-man/id1625871569" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/pokeyman.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/giant-slayer-3d/id1608375364" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/giantslayer3d.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/clicker-slice/id6444286830" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/clickerslice.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/predict-who/id1631345381" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/predictwho.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/paint-the-board/id1623337521" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/painttheboard.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/lane-tapper/id1659640342" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/lanetapper.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/heavy-money/id1630393843" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/heavymoney.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/jackpot-runner/id1604590209" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/jackpotrunner.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/rush-packaging/id1618949836" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/rushpackaging.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/iced-drink/id1631367147" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/iceddrink.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/money-stack-3d/id1563933445" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/moneysstack.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/bend-the-plane/id1666620471" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/bendtheplane.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/manage-balls/id1660563048" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/manageballs.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/increase-numbers/id1662516983" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/increasenumbers.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/mine-bombing/id1661664104" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/minebombing.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/rolling-fire/id1559044964" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/rollingfire.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/quicksilver-runner/id1563902899" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/quicksilverrunner.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/serve-drinks/id6462894993" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/servedrinks.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/coffee-corner/id1662519627" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/coffeecorner.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/sand-plumber/id6446318703" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/sandplumber.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/saber-run/id6448994108" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/saberrun.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/sky-agent-x/id6456524827" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/skyagentx.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-md-2">
-                <div class="project-wrapper__image">
-                    <a href="https://apps.apple.com/us/app/buy-em-all/id6450591811" target="_blank" rel="noopener noreferrer">
-                        <div class="thumbnail rounded">
-                            <img src="./assets/buyemall.png" class="img-fluid" alt="Project Image" />
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Projects Section -->
+    /* ── SECTIONS ──────────────────────────────────────────────── */
+    section { padding: var(--section-gap) 40px; }
+    .container { max-width: var(--max-w); margin: 0 auto; }
 
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-wrapper">
-          <a href="mailto:ali.alperen.uzun@gmail.com" class="cta-btn cta-btn--resume">Work Together</a>
-        </div>
-      </div>
-    </section>
-    <!-- END Contact Section -->
+    .section-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.1;
+      margin-bottom: 56px;
+    }
 
-    <!-- Footer Section -->
-    <footer class="footer">
-      <div class="container">
-        <a href="#hero" class="back-to-top" aria-label="go back to top">
-          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+    /* ── ABOUT ─────────────────────────────────────────────────── */
+    #about { border-top: 1px solid var(--border); background: var(--bg2); }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.6fr;
+      gap: 80px;
+      align-items: start;
+    }
+    .about-photo {
+      position: relative;
+    }
+    .about-photo img {
+      width: 100%;
+      aspect-ratio: 3/4;
+      object-fit: cover;
+      object-position: top;
+      filter: grayscale(30%);
+      display: block;
+    }
+    .about-photo::after {
+      content: '';
+      position: absolute;
+      inset: 12px -12px -12px 12px;
+      border: 1px solid var(--border);
+      z-index: -1;
+    }
+    .about-content p {
+      color: var(--muted);
+      font-size: 0.97rem;
+      line-height: 1.8;
+      margin-bottom: 18px;
+    }
+    .about-content p strong {
+      color: var(--text);
+      font-weight: 500;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 32px 0 40px;
+    }
+    .skill-tag {
+      font-size: 0.78rem;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      padding: 8px 0;
+      border-top: 1px solid var(--border);
+    }
+    .skill-tag strong { color: var(--text); font-weight: 500; display: block; }
+
+    /* ── EXPERIENCE ────────────────────────────────────────────── */
+    #experience { border-top: 1px solid var(--border); }
+    .exp-list { display: flex; flex-direction: column; gap: 0; }
+    .exp-item {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 48px;
+      padding: 40px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .exp-item:first-child { border-top: 1px solid var(--border); }
+    .exp-meta { padding-top: 4px; }
+    .exp-date {
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      font-weight: 500;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .exp-company {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.2;
+    }
+    .exp-type {
+      font-size: 0.74rem;
+      color: var(--muted2);
+      margin-top: 4px;
+      letter-spacing: 0.06em;
+    }
+    .exp-body {}
+    .exp-role {
+      font-size: 0.8rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+    .exp-desc {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.75;
+      margin-bottom: 20px;
+    }
+    .exp-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .tag {
+      font-size: 0.72rem;
+      padding: 4px 10px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      border-radius: 1px;
+    }
+
+    /* ── DARK CROWN SECTION ────────────────────────────────────── */
+    .dc-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 52px;
+      align-items: start;
+    }
+    .dc-tag {
+      font-size: 0.94rem;
+      color: rgba(244,240,230,0.6);
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    .dc-tag strong { color: var(--dark-txt); font-weight: 500; }
+    .dc-body {
+      font-size: 0.88rem;
+      color: rgba(244,240,230,0.48);
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+    .dc-tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 28px;
+    }
+    .dc-tag-pill {
+      font-size: 0.67rem;
+      padding: 3px 9px;
+      border: 1px solid rgba(244,240,230,0.18);
+      color: rgba(244,240,230,0.45);
+      letter-spacing: 0.04em;
+      border-radius: 1px;
+    }
+    .dc-links { display: flex; gap: 11px; flex-wrap: wrap; }
+    .dc-vid {
+      position: relative;
+      aspect-ratio: 16/9;
+      background: #181410;
+      overflow: hidden;
+    }
+    .dc-vid img { width: 100%; height: 100%; object-fit: cover; opacity: 0.68; transition: opacity 0.3s; }
+    .dc-vid:hover img { opacity: 0.82; }
+    .play-btn {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%,-50%);
+      width: 62px; height: 62px;
+      border-radius: 50%;
+      background: rgba(244,240,230,0.10);
+      border: 1.5px solid rgba(244,240,230,0.35);
+      display: flex; align-items: center; justify-content: center;
+      transition: background 0.2s, transform 0.2s;
+      backdrop-filter: blur(4px);
+      cursor: pointer;
+    }
+    .play-btn svg { width: 19px; height: 19px; fill: var(--dark-txt); margin-left: 3px; }
+    .dc-vid:hover .play-btn { background: rgba(244,240,230,0.20); transform: translate(-50%,-50%) scale(1.07); }
+    .dc-vid iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: none; }
+    .dc-shots {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3px;
+      margin-top: 3px;
+    }
+    .dc-shot { aspect-ratio: 16/9; overflow: hidden; background: #181410; }
+    .dc-shot img { width: 100%; height: 100%; object-fit: cover; opacity: 0.65; transition: opacity 0.3s, transform 0.4s; }
+    .dc-shot:hover img { opacity: 0.9; transform: scale(1.05); }
+
+    /* ── FEATURED PROJECT ──────────────────────────────────────── */
+    #projects { border-top: 1px solid var(--border); }
+    .featured-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      overflow: hidden;
+      margin-bottom: 80px;
+    }
+    .featured-img {
+      position: relative;
+      overflow: hidden;
+      min-height: 420px;
+    }
+    .featured-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+    .featured-card:hover .featured-img img { transform: scale(1.04); }
+    .featured-badge {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 0.68rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      background: var(--accent);
+      color: #0c0c0d;
+      padding: 5px 10px;
+      font-weight: 600;
+    }
+    .featured-content {
+      padding: 52px 48px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .featured-title {
+      font-family: var(--font-display);
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: var(--text);
+      line-height: 1.1;
+      margin-bottom: 8px;
+    }
+    .featured-role {
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 24px;
+    }
+    .featured-desc {
+      font-size: 0.95rem;
+      color: var(--muted);
+      line-height: 1.8;
+      margin-bottom: 28px;
+    }
+    .featured-tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-bottom: 36px;
+    }
+    .featured-links { display: flex; gap: 12px; }
+
+    /* ── OTHER PROJECTS GRID ───────────────────────────────────── */
+    .other-title {
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 24px;
+      font-weight: 500;
+    }
+    .games-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 2px;
+    }
+    .game-thumb {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 1;
+      background: var(--surface2);
+    }
+    .game-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease, filter 0.4s ease;
+      filter: saturate(0.7);
+    }
+    .game-thumb:hover img {
+      transform: scale(1.08);
+      filter: saturate(1);
+    }
+    .game-thumb-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(12,12,13,0.72);
+      display: flex;
+      align-items: flex-end;
+      padding: 10px;
+      opacity: 0;
+      transition: opacity 0.3s;
+    }
+    .game-thumb:hover .game-thumb-overlay { opacity: 1; }
+    .game-thumb-name {
+      font-size: 0.72rem;
+      font-weight: 500;
+      color: var(--text);
+      letter-spacing: 0.04em;
+      line-height: 1.3;
+    }
+
+    /* ── CONTACT ───────────────────────────────────────────────── */
+    #contact {
+      border-top: 1px solid var(--border);
+      background: var(--bg2);
+      text-align: center;
+    }
+    #contact .section-title { margin-bottom: 16px; }
+    .contact-sub {
+      font-size: 1rem;
+      color: var(--muted);
+      max-width: 480px;
+      margin: 0 auto 48px;
+    }
+    .contact-email {
+      font-family: var(--font-display);
+      font-size: clamp(1.4rem, 3vw, 2.2rem);
+      font-style: italic;
+      color: var(--text);
+      text-decoration: none;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 4px;
+      transition: color 0.2s, border-color 0.2s;
+      display: inline-block;
+      margin-bottom: 48px;
+    }
+    .contact-email:hover {
+      color: var(--accent2);
+      border-color: var(--accent2);
+    }
+
+    /* ── FOOTER ────────────────────────────────────────────────── */
+    footer {
+      background: var(--text);
+      color: var(--bg2);
+      padding: 22px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .footer-copy {
+      font-size: 0.73rem;
+      letter-spacing: 0.05em;
+      color: rgba(244,240,230,0.4);
+    }
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+    .footer-links a {
+      font-size: 0.73rem;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+      color: rgba(244,240,230,0.45);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: var(--bg2); }
+
+    /* ── ANIMATIONS ────────────────────────────────────────────── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to   { opacity: 1; }
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      50%       { transform: translateX(-50%) translateY(6px); }
+    }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── RESPONSIVE ────────────────────────────────────────────── */
+    @media (max-width: 900px) {
+      nav { padding: 16px 24px; }
+      .nav-links { gap: 20px; }
+      section, #projects { padding: 80px 24px; }
+      #hero { padding: 100px 24px 80px; }
+      .hero-stats { display: none; }
+      .about-grid { grid-template-columns: 1fr; gap: 40px; }
+      .about-photo { max-width: 260px; }
+      .exp-item { grid-template-columns: 1fr; gap: 16px; }
+      .exp-meta { padding-top: 0; }
+      .dc-grid { grid-template-columns: 1fr; }
+      .games-grid { grid-template-columns: repeat(4, 1fr); }
+      footer { flex-direction: column; gap: 14px; text-align: center; }
+    }
+    @media (max-width: 600px) {
+      .nav-links { display: none; }
+      .hero-title { font-size: 2.8rem; }
+      .games-grid { grid-template-columns: repeat(3, 1fr); }
+      .skills-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">Ali Alperen Uzun</a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <div id="hero">
+    <section class="container">
+      <p class="hero-eyebrow">Game Developer &amp; Team Lead</p>
+      <h1 class="hero-title">
+        Building worlds<br />
+        from <em>code</em><br />
+        and craft.
+      </h1>
+      <p class="hero-sub">
+        5+ years in professional game development. Creator of <strong>The Dark Crown: Genesis</strong>. Worked on titles with over <strong>30 million downloads</strong> worldwide.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Work</a>
+        <a href="./assets/CV.pdf" download="AliAlperenUzunCV" class="btn btn-ghost">
+          Download CV
         </a>
-        <div class="social-links">
-          </a>
-          <a
-            href="https://www.linkedin.com/in/ali-alperen-uzun/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="linkedin"
-          >
-            <i class="fa fa-linkedin"></i>
-          </a>
-          <a
-            href="https://github.com/aalperenuzun"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="github"
-          >
-            <i class="fa fa-github"></i>
-          </a>
-        </div>
-        <hr />
-        <p class="footer__text">
-          &copy; <span id="year"></span> - Ali Alperen Uzun
-        </p>
       </div>
-    </footer>
-    <!-- END Footer Section -->
+    </section>
 
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
-    <script src="./javascript/vanilla-tilt.min.js"></script>
-    <script type="text/javascript" src="./javascript/valtilt.js"></script>
-  </body>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-number">30M+</div>
+        <div class="stat-label">Downloads</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">5+</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number">30+</div>
+        <div class="stat-label">Shipped Titles</div>
+      </div>
+    </div>
+
+    <a href="#about" class="hero-scroll">
+      <i class="fa-solid fa-chevron-down"></i>
+      scroll
+    </a>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid reveal">
+        <div class="about-photo">
+          <img src="./assets/me.jpeg" alt="Alperen Uzun" />
+        </div>
+        <div class="about-content">
+          <p class="section-label">About</p>
+          <h2 class="section-title" style="margin-bottom: 28px;">
+            Developer, designer,<br />and team lead.
+          </h2>
+          <p>
+            I'm a game developer based in <strong>Bursa, Turkey</strong> with over 5 years of professional experience building games in Unity. From hyper-casual mobile titles to a fully custom 2D action roguelite, I've worked across the full spectrum of game development.
+          </p>
+          <p>
+            At <strong>Sharaido Games</strong> I lead a small team building <strong>The Dark Crown: Genesis</strong> — handling everything from enemy AI architecture and procedural generation to technical art, UI/UX, and game design. I believe great games come from developers who can think holistically.
+          </p>
+          <p>
+            Previously at <strong>MOBGE</strong>, I shipped 30+ hyper-casual prototypes and two titles that together reached over 30 million downloads on iOS and Android.
+          </p>
+
+          <div class="skills-grid">
+            <div class="skill-tag"><strong>Engine</strong> Unity3D (URP/HDRP)</div>
+            <div class="skill-tag"><strong>Language</strong> C#, C++, JavaScript</div>
+            <div class="skill-tag"><strong>AI Systems</strong> NodeCanvas, Behavior Trees</div>
+            <div class="skill-tag"><strong>Proc. Gen</strong> Edgar Pro</div>
+            <div class="skill-tag"><strong>Tools</strong> DOTween, Feel, Obi</div>
+            <div class="skill-tag"><strong>Platforms</strong> Steam, iOS, Android</div>
+          </div>
+
+          <div style="display:flex; gap:12px; flex-wrap:wrap;">
+            <a href="./assets/CV.pdf" download="AliAlperenUzunCV" class="btn btn-primary">Download Resume</a>
+            <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="container">
+      <p class="section-label reveal">Experience</p>
+      <h2 class="section-title reveal">Where I've worked.</h2>
+
+      <div class="exp-list">
+
+        <div class="exp-item reveal">
+          <div class="exp-meta">
+            <div class="exp-date">Aug 2023 – Present</div>
+            <div class="exp-company">Sharaido<br />Games</div>
+          </div>
+          <div class="exp-body">
+            <div class="exp-role">Game Developer &amp; Team Lead</div>
+            <p class="exp-desc">
+              Leading a 5–6 person team developing <em>The Dark Crown: Genesis</em>, a 2D action roguelite with procedural dungeon generation. I architect enemy AI systems, adapt proc-gen pipelines, create VFX and technical art assets, design gameplay and levels, and manage team workflows — from GitHub Actions to Steam page strategy.
+            </p>
+            <div class="exp-tags">
+              <span class="tag">Unity URP</span>
+              <span class="tag">NodeCanvas</span>
+              <span class="tag">Edgar Pro</span>
+              <span class="tag">DOTween</span>
+              <span class="tag">Technical Art</span>
+              <span class="tag">Team Lead</span>
+              <span class="tag">Game Design</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-meta">
+            <div class="exp-date">May – Dec 2025</div>
+            <div class="exp-company">Tech<br />Turtles</div>
+            <div class="exp-type">Contract</div>
+          </div>
+          <div class="exp-body">
+            <div class="exp-role">Game Developer</div>
+            <p class="exp-desc">
+              Contracted to build core gameplay systems for <em>Subminer</em>, an upcoming 3D Unity title targeting Steam. Delivered dialogue, NPC interaction, upgrade, chest/loot, mini-boss, and challenge systems within a 5-person team.
+            </p>
+            <div class="exp-tags">
+              <span class="tag">Unity 3D</span>
+              <span class="tag">C#</span>
+              <span class="tag">Dialogue Systems</span>
+              <span class="tag">NPC AI</span>
+              <span class="tag">Steam</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-meta">
+            <div class="exp-date">Mar 2021 – Aug 2023</div>
+            <div class="exp-company">MOBGE</div>
+          </div>
+          <div class="exp-body">
+            <div class="exp-role">Senior Game Developer</div>
+            <p class="exp-desc">
+              Designed and shipped 30+ hyper-casual prototypes for iOS and Android. Two titles reached over <strong style="color:var(--text)">30 million combined downloads</strong>. Contributed to game design pipelines and mentored interns and junior developers.
+            </p>
+            <div class="exp-tags">
+              <span class="tag">Unity</span>
+              <span class="tag">iOS</span>
+              <span class="tag">Android</span>
+              <span class="tag">Hyper-Casual</span>
+              <span class="tag">Mentoring</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal">
+          <div class="exp-meta">
+            <div class="exp-date">Jan – Mar 2021</div>
+            <div class="exp-company">Selay<br />C.C. Games</div>
+          </div>
+          <div class="exp-body">
+            <div class="exp-role">Game Developer</div>
+            <p class="exp-desc">
+              Developed casual Unity mobile games while taking on team coordination responsibilities alongside hands-on development.
+            </p>
+            <div class="exp-tags">
+              <span class="tag">Unity</span>
+              <span class="tag">Mobile</span>
+              <span class="tag">Casual Games</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DARK CROWN — dark section -->
+  <section id="projects" style="background: var(--dark-bg); color: var(--dark-txt); padding: var(--section-gap) 40px;">
+    <div class="container">
+      <p class="section-label reveal" style="color: #c9a060;">Featured Project</p>
+      <h2 class="section-title reveal" style="color: var(--dark-txt);">The Dark Crown: Genesis</h2>
+
+      <div class="dc-grid reveal">
+        <div>
+          <p class="dc-tag">A <strong>2D action roguelite</strong> set in an endless cursed dungeon. Sacrificed by your kingdom, you fight back — defeating powerful Demons and claiming their elements.</p>
+          <p class="dc-body">Pixel-perfect Unity URP. Procedurally generated dungeons via Edgar Pro. Enemy AI on NodeCanvas behavior trees — each enemy has its own state machine, attack interrupts on damage, and unique mechanics. I also handled all VFX, normal maps, emission maps, UI systems, and game design.</p>
+          <p class="dc-body">Playable demo live on Steam now.</p>
+          <div class="dc-tech">
+            <span class="dc-tag-pill">Unity URP</span>
+            <span class="dc-tag-pill">C#</span>
+            <span class="dc-tag-pill">Edgar Pro</span>
+            <span class="dc-tag-pill">NodeCanvas</span>
+            <span class="dc-tag-pill">DOTween</span>
+            <span class="dc-tag-pill">Feel</span>
+          </div>
+          <div class="dc-links">
+            <a href="https://store.steampowered.com/app/3273960/The_Dark_Crown_Genesis/" target="_blank" rel="noopener" class="btn btn-ghost-dark">
+              <i class="fa-brands fa-steam"></i> Steam Page
+            </a>
+            <a href="https://store.steampowered.com/app/3522050/The_Dark_Crown_Genesis_Demo/" target="_blank" rel="noopener" class="btn btn-ghost-dark">
+              Play Demo
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="dc-vid" id="dcv" data-vid="YOUTUBE_VIDEO_ID">
+            <img src="./assets/darkcrown.png" alt="The Dark Crown: Genesis" />
+            <div class="play-btn" id="dcp">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            </div>
+          </div>
+          <div class="dc-shots">
+            <div class="dc-shot"><img src="./assets/darkcrown.png" alt="In-game screenshot" /></div>
+            <div class="dc-shot"><img src="./assets/darkcrown.png" alt="In-game screenshot" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OTHER PROJECTS / MOBGE GRID -->
+  <section id="projects-grid">
+    <div class="container">
+      <p class="section-label reveal">Other Work</p>
+      <h2 class="section-title reveal">30+ shipped titles.</h2>
+      <p class="other-title reveal">All published at <strong>MOBGE</strong>, 2021–2023, on iOS and Android.</p>
+      <div class="games-grid reveal">
+        <a class="game-thumb" href="https://apps.apple.com/us/app/hand-strike/id1559046720" target="_blank" rel="noopener">
+          <img src="./assets/handstrike.png" alt="Hand Strike" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">Hand Strike</span></div>
+        </a>
+        <a class="game-thumb" href="https://apps.apple.com/us/app/saw-stick/id6443920255" target="_blank" rel="noopener">
+          <img src="./assets/sawstick.png" alt="Saw Stick" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">Saw Stick</span></div>
+        </a>
+        <a class="game-thumb" href="https://apps.apple.com/us/app/catapult-runner-3d/id1571483089" target="_blank" rel="noopener">
+          <img src="./assets/catapultrunner.png" alt="Catapult Runner 3D" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">Catapult Runner 3D</span></div>
+        </a>
+        <a class="game-thumb" href="https://apps.apple.com/us/app/battle-the-giant/id1581980186" target="_blank" rel="noopener">
+          <img src="./assets/battlethegiant.png" alt="Battle The Giant" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">Battle The Giant</span></div>
+        </a>
+        <a class="game-thumb" href="https://apps.apple.com/us/app/dig-to-be-rich/id6443624849" target="_blank" rel="noopener">
+          <img src="./assets/digtoberich.png" alt="Dig To Be Rich" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">Dig To Be Rich</span></div>
+        </a>
+        <a class="game-thumb" href="https://apps.apple.com/us/app/grind-them-all/id1601794975" target="_blank" rel="noopener">
+          <img src="./assets/grindthemall.png" alt="Grind Them All" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">Grind Them All</span></div>
+        </a>
+        <a class="game-thumb" href="https://apps.apple.com/us/app/8-way-attack/id1641727446" target="_blank" rel="noopener">
+          <img src="./assets/eightwayattack.png" alt="8 Way Attack" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">8 Way Attack</span></div>
+        </a>
+        <a class="game-thumb" href="https://apps.apple.com/us/app/pokey-man/id1625871569" target="_blank" rel="noopener">
+          <img src="./assets/pokeyman.png" alt="Pokey Man" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">Pokey Man</span></div>
+        </a>
+        <a class="game-thumb" href="https://apps.apple.com/us/app/giant-slayer-3d/id1608375364" target="_blank" rel="noopener">
+          <img src="./assets/giantslayer3d.png" alt="Giant Slayer 3D" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">Giant Slayer 3D</span></div>
+        </a>
+        <a class="game-thumb" href="https://apps.apple.com/us/app/clicker-slice/id6444286830" target="_blank" rel="noopener">
+          <img src="./assets/clickerslice.png" alt="Clicker Slice" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">Clicker Slice</span></div>
+        </a>
+        <a class="game-thumb" href="https://apps.apple.com/us/app/predict-who/id1631345381" target="_blank" rel="noopener">
+          <img src="./assets/predictwho.png" alt="Predict Who" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">Predict Who</span></div>
+        </a>
+        <a class="game-thumb" href="https://apps.apple.com/us/app/paint-the-board/id1623337521" target="_blank" rel="noopener">
+          <img src="./assets/painttheboard.png" alt="Paint The Board" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">Paint The Board</span></div>
+        </a>
+        <a class="game-thumb" href="https://apps.apple.com/us/app/lane-tapper/id1659640342" target="_blank" rel="noopener">
+          <img src="./assets/lanetapper.png" alt="Lane Tapper" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">Lane Tapper</span></div>
+        </a>
+        <a class="game-thumb" href="https://apps.apple.com/us/app/heavy-money/id1630393843" target="_blank" rel="noopener">
+          <img src="./assets/heavymoney.png" alt="Heavy Money" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">Heavy Money</span></div>
+        </a>
+        <a class="game-thumb" href="https://apps.apple.com/us/app/jackpot-runner/id1604590209" target="_blank" rel="noopener">
+          <img src="./assets/jackpotrunner.png" alt="Jackpot Runner" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">Jackpot Runner</span></div>
+        </a>
+        <a class="game-thumb" href="https://apps.apple.com/us/app/rush-packaging/id1618949836" target="_blank" rel="noopener">
+          <img src="./assets/rushpackaging.png" alt="Rush Packaging" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">Rush Packaging</span></div>
+        </a>
+        <a class="game-thumb" href="https://apps.apple.com/us/app/iced-drink/id1631367147" target="_blank" rel="noopener">
+          <img src="./assets/iceddrink.png" alt="Iced Drink" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">Iced Drink</span></div>
+        </a>
+        <a class="game-thumb" href="https://apps.apple.com/us/app/money-stack-3d/id1563933445" target="_blank" rel="noopener">
+          <img src="./assets/moneysstack.png" alt="Money Stack 3D" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">Money Stack 3D</span></div>
+        </a>
+        <a class="game-thumb" href="https://apps.apple.com/us/app/bend-the-plane/id1666620471" target="_blank" rel="noopener">
+          <img src="./assets/bendtheplane.png" alt="Bend The Plane" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">Bend The Plane</span></div>
+        </a>
+        <a class="game-thumb" href="https://apps.apple.com/us/app/manage-balls/id1660563048" target="_blank" rel="noopener">
+          <img src="./assets/manageballs.png" alt="Manage Balls" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">Manage Balls</span></div>
+        </a>
+        <a class="game-thumb" href="https://apps.apple.com/us/app/increase-numbers/id1662516983" target="_blank" rel="noopener">
+          <img src="./assets/increasenumbers.png" alt="Increase Numbers" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">Increase Numbers</span></div>
+        </a>
+        <a class="game-thumb" href="https://apps.apple.com/us/app/mine-bombing/id1661664104" target="_blank" rel="noopener">
+          <img src="./assets/minebombing.png" alt="Mine Bombing" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">Mine Bombing</span></div>
+        </a>
+        <a class="game-thumb" href="https://apps.apple.com/us/app/rolling-fire/id1559044964" target="_blank" rel="noopener">
+          <img src="./assets/rollingfire.png" alt="Rolling Fire" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">Rolling Fire</span></div>
+        </a>
+        <a class="game-thumb" href="https://apps.apple.com/us/app/quicksilver-runner/id1563902899" target="_blank" rel="noopener">
+          <img src="./assets/quicksilverrunner.png" alt="Quicksilver Runner" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">Quicksilver Runner</span></div>
+        </a>
+        <a class="game-thumb" href="https://apps.apple.com/us/app/serve-drinks/id6462894993" target="_blank" rel="noopener">
+          <img src="./assets/servedrinks.png" alt="Serve Drinks" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">Serve Drinks</span></div>
+        </a>
+        <a class="game-thumb" href="https://apps.apple.com/us/app/coffee-corner/id1662519627" target="_blank" rel="noopener">
+          <img src="./assets/coffeecorner.png" alt="Coffee Corner" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">Coffee Corner</span></div>
+        </a>
+        <a class="game-thumb" href="https://apps.apple.com/us/app/sand-plumber/id6446318703" target="_blank" rel="noopener">
+          <img src="./assets/sandplumber.png" alt="Sand Plumber" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">Sand Plumber</span></div>
+        </a>
+        <a class="game-thumb" href="https://apps.apple.com/us/app/saber-run/id6448994108" target="_blank" rel="noopener">
+          <img src="./assets/saberrun.png" alt="Saber Run" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">Saber Run</span></div>
+        </a>
+        <a class="game-thumb" href="https://apps.apple.com/us/app/sky-agent-x/id6456524827" target="_blank" rel="noopener">
+          <img src="./assets/skyagentx.png" alt="Sky Agent X" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">Sky Agent X</span></div>
+        </a>
+        <a class="game-thumb" href="https://apps.apple.com/us/app/buy-em-all/id6450591811" target="_blank" rel="noopener">
+          <img src="./assets/buyemall.png" alt="Buy Em All" />
+          <div class="game-thumb-overlay"><span class="game-thumb-name">Buy Em All</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="container">
+      <p class="section-label reveal">Contact</p>
+      <h2 class="section-title reveal">Let's work together.</h2>
+      <p class="contact-sub reveal">
+        Open to new opportunities, collaborations, and interesting projects.
+      </p>
+      <a href="mailto:ali.alperen.uzun@gmail.com" class="contact-email reveal">
+        ali.alperen.uzun@gmail.com
+      </a>
+      <div class="reveal" style="display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+        <a href="https://www.linkedin.com/in/ali-alperen-uzun/" target="_blank" rel="noopener" class="btn btn-ghost">
+          <i class="fa-brands fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/AAlperenUzun" target="_blank" rel="noopener" class="btn btn-ghost">
+          <i class="fa-brands fa-github"></i> GitHub
+        </a>
+        <a href="https://store.steampowered.com/app/3273960/The_Dark_Crown_Genesis/" target="_blank" rel="noopener" class="btn btn-ghost">
+          <i class="fa-brands fa-steam"></i> Steam
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <span class="footer-copy">&copy; <span id="year"></span> Ali Alperen Uzun</span>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/ali-alperen-uzun/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/AAlperenUzun" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://store.steampowered.com/app/3273960/The_Dark_Crown_Genesis/" target="_blank" rel="noopener">Steam</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    // Nav scroll effect
+    const navbar = document.getElementById("navbar");
+    window.addEventListener("scroll", () => {
+      navbar.classList.toggle("scrolled", window.scrollY > 40);
+    }, { passive: true });
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll(".reveal");
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add("visible"), i * 60);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    reveals.forEach(el => observer.observe(el));
+
+    // YouTube embed for Dark Crown
+    const dcp = document.getElementById("dcp");
+    if (dcp) {
+      dcp.addEventListener("click", () => {
+        const wrap = document.getElementById("dcv");
+        const vid = wrap.dataset.vid;
+        if (!vid || vid === "YOUTUBE_VIDEO_ID") {
+          window.open("https://store.steampowered.com/app/3273960/The_Dark_Crown_Genesis/", "_blank");
+          return;
+        }
+        const f = document.createElement("iframe");
+        f.src = `https://www.youtube.com/embed/${vid}?autoplay=1`;
+        f.allow = "autoplay; encrypted-media";
+        f.allowFullscreen = true;
+        wrap.innerHTML = "";
+        wrap.appendChild(f);
+      });
+    }
+  </script>
+</body>
 </html>
