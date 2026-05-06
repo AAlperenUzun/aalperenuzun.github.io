@@ -430,6 +430,11 @@
     .dc-shot { aspect-ratio: 16/9; overflow: hidden; background: #181410; }
     .dc-shot img { width: 100%; height: 100%; object-fit: cover; opacity: 0.65; transition: opacity 0.3s, transform 0.4s; }
     .dc-shot:hover img { opacity: 0.9; transform: scale(1.05); }
+    .dc-divider {
+      height: 1px;
+      background: rgba(244,240,230,0.12);
+      margin: 80px 0 40px;
+    }
 
     /* ── FEATURED PROJECT ──────────────────────────────────────── */
     #projects { border-top: 1px solid var(--border); }
@@ -847,7 +852,7 @@
   <!-- DARK CROWN — dark section -->
   <section id="projects" style="background: var(--dark-bg); color: var(--dark-txt); padding: var(--section-gap) 40px;">
     <div class="container">
-      <p class="section-label reveal" style="color: #c9a060;">Featured Project</p>
+      <p class="section-label reveal" style="color: #c9a060;">Featured Projects</p>
       <h2 class="section-title reveal" style="color: var(--dark-txt);">The Dark Crown: Genesis</h2>
 
       <div class="dc-grid reveal">
@@ -882,6 +887,35 @@
           <div class="dc-shots">
             <div class="dc-shot"><img src="./assets/ingame1.png" alt="In-game screenshot" /></div>
             <div class="dc-shot"><img src="./assets/ingame2.png" alt="In-game screenshot" /></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dc-divider reveal"></div>
+
+      <h2 class="section-title reveal" style="color: var(--dark-txt); margin-top: 0;">The Subminer</h2>
+
+      <div class="dc-grid reveal">
+        <div>
+          <p class="dc-tag">An atmospheric <strong>underwater drilling roguelite</strong> set beneath the icy crust of Enceladus. Pilot your submarine, mine through procedural caves, and survive the terrors lurking in the dark.</p>
+          <p class="dc-body">A 3D Unity title by Tech Turtles, published by Yogscast Games, releasing in 2026. As a contract developer on a 5-person team, I built core gameplay systems: dialogue, NPC interaction, upgrade trees, chest and loot logic, mini-boss encounters, and challenge systems.</p>
+          <div class="dc-tech">
+            <span class="dc-tag-pill">Unity 3D</span>
+            <span class="dc-tag-pill">C#</span>
+            <span class="dc-tag-pill">Dialogue Systems</span>
+            <span class="dc-tag-pill">NPC AI</span>
+            <span class="dc-tag-pill">Procedural</span>
+            <span class="dc-tag-pill">Steam</span>
+          </div>
+          <div class="dc-links">
+            <a href="https://store.steampowered.com/app/3240110/The_Subminer/" target="_blank" rel="noopener" class="btn btn-ghost-dark">
+              <i class="fa-brands fa-steam"></i> Steam Page
+            </a>
+          </div>
+        </div>
+        <div>
+          <div class="dc-vid">
+            <img src="./assets/subminer.png" alt="The Subminer" />
           </div>
         </div>
       </div>
